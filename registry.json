@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-02T09:31:00.000Z",
+  "updated_at": "2026-11-02T09:32:00.000Z",
   "skills": [
     {
       "name": "context-diet",
@@ -9,6 +9,15 @@
       "path": "skills/context-diet",
       "tags": [
         "optimization"
+      ]
+    },
+    {
+      "name": "pr-distiller",
+      "description": "Distills multi-file git diffs into executive risk and architecture reviews. Use when analyzing git diffs, reviewing pull requests, or preparing release changelogs.",
+      "category": "code-analysis",
+      "path": "skills/pr-distiller",
+      "tags": [
+        "code-analysis"
       ]
     }
   ]
