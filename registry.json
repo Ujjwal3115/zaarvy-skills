@@ -1,5 +1,15 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-02T09:30:00.000Z",
-  "skills": []
+  "updated_at": "2026-11-02T09:31:00.000Z",
+  "skills": [
+    {
+      "name": "context-diet",
+      "description": "Compresses source code and file context before passing to LLM reasoning. Use when ingesting files over 100 lines, preparing multi-file prompts, or pruning token bloat.",
+      "category": "optimization",
+      "path": "skills/context-diet",
+      "tags": [
+        "optimization"
+      ]
+    }
+  ]
 }
