@@ -1,7 +1,16 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-02T09:32:00.000Z",
+  "updated_at": "2026-11-02T09:39:34.372Z",
   "skills": [
+    {
+      "name": "api-contract-mocker",
+      "description": "Generates zero-dependency mock handlers and fixtures from API specs. Use when receiving OpenAPI schemas, Swagger JSON, or TypeScript interfaces to mock endpoints.",
+      "category": "mocking",
+      "path": "skills/api-contract-mocker",
+      "tags": [
+        "mocking"
+      ]
+    },
     {
       "name": "context-diet",
       "description": "Compresses source code and file context before passing to LLM reasoning. Use when ingesting files over 100 lines, preparing multi-file prompts, or pruning token bloat.",

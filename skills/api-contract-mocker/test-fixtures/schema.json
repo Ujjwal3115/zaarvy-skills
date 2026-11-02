@@ -1,0 +1,112 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Zaarvy Commerce API",
+    "version": "1.0.0",
+    "description": "Sample API contract for testing contract mock generation"
+  },
+  "paths": {
+    "/api/v1/auth/login": {
+      "post": {
+        "summary": "Authenticate user credentials",
+        "operationId": "loginUser",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["email", "password"],
+                "properties": {
+                  "email": { "type": "string", "format": "email", "example": "alex@zaarvy.io" },
+                  "password": { "type": "string", "format": "password", "example": "Secr3tP@ssw0rd!" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Authentication successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["access_token", "token_type", "expires_in"],
+                  "properties": {
+                    "access_token": { "type": "string", "example": "eyJh...sample-jwt...kQ" },
+                    "token_type": { "type": "string", "example": "Bearer" },
+                    "expires_in": { "type": "integer", "example": 3600 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/users/{userId}": {
+      "get": {
+        "summary": "Fetch user profile details",
+        "operationId": "getUserById",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User profile retrieved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["id", "username", "email", "role", "created_at"],
+                  "properties": {
+                    "id": { "type": "string", "format": "uuid", "example": "d3b07384-d113-4f44-93e9-a68212133499" },
+                    "username": { "type": "string", "example": "alex_developer" },
+                    "email": { "type": "string", "format": "email", "example": "alex@zaarvy.io" },
+                    "role": { "type": "string", "enum": ["admin", "member", "guest"], "example": "member" },
+                    "created_at": { "type": "string", "format": "date-time", "example": "2026-01-15T09:30:00Z" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/orders": {
+      "get": {
+        "summary": "List customer orders",
+        "operationId": "listOrders",
+        "responses": {
+          "200": {
+            "description": "List of recent orders",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["order_id", "total_amount", "currency", "status"],
+                    "properties": {
+                      "order_id": { "type": "string", "format": "uuid", "example": "8f8b1a50-6192-4f3b-b27b-586b66e1337b" },
+                      "total_amount": { "type": "number", "format": "float", "example": 149.99 },
+                      "currency": { "type": "string", "example": "USD" },
+                      "status": { "type": "string", "enum": ["pending", "completed", "cancelled"], "example": "completed" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
