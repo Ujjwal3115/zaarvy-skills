@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-13T07:00:22.647Z",
+  "updated_at": "2026-11-13T07:02:18.338Z",
   "skills": [
     {
       "name": "anti-slop-ui",
@@ -27,6 +27,15 @@
       "path": "skills/context-diet",
       "tags": [
         "optimization"
+      ]
+    },
+    {
+      "name": "dead-code-reaper",
+      "description": "Identifies orphaned components, unused exports, stale prototypes, and abandoned helper files left behind after heavy AI refactors or fast iterations.",
+      "category": "refactoring",
+      "path": "skills/dead-code-reaper",
+      "tags": [
+        "refactoring"
       ]
     },
     {
