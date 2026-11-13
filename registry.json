@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-13T06:53:48.020Z",
+  "updated_at": "2026-11-13T06:55:38.699Z",
   "skills": [
     {
       "name": "anti-slop-ui",
@@ -27,6 +27,15 @@
       "path": "skills/context-diet",
       "tags": [
         "optimization"
+      ]
+    },
+    {
+      "name": "loop-breaker",
+      "description": "If an agent fails a fix twice, it is blocked from editing code on turn 3 until it explains the broken root assumption and proposes a different approach.",
+      "category": "guardrail",
+      "path": "skills/loop-breaker",
+      "tags": [
+        "guardrail"
       ]
     },
     {
