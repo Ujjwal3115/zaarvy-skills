@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-13T06:55:38.699Z",
+  "updated_at": "2026-11-13T06:58:48.329Z",
   "skills": [
     {
       "name": "anti-slop-ui",
@@ -27,6 +27,15 @@
       "path": "skills/context-diet",
       "tags": [
         "optimization"
+      ]
+    },
+    {
+      "name": "env-auditor",
+      "description": "Cross-checks process.env, os.getenv, and configuration calls across the repository against .env.example to catch missing, mismatched, or leaked variables before deployment.",
+      "category": "devops",
+      "path": "skills/env-auditor",
+      "tags": [
+        "devops"
       ]
     },
     {
