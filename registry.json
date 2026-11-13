@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-13T06:58:48.329Z",
+  "updated_at": "2026-11-13T07:00:22.647Z",
   "skills": [
     {
       "name": "anti-slop-ui",
@@ -45,6 +45,15 @@
       "path": "skills/loop-breaker",
       "tags": [
         "guardrail"
+      ]
+    },
+    {
+      "name": "n-plus-one-hunter",
+      "description": "Scans ORM loops across Prisma, SQLAlchemy, Mongoose, Django, and TypeORM to identify hidden N+1 database queries, missing eager loading, and unindexed relation bottlenecks.",
+      "category": "performance",
+      "path": "skills/n-plus-one-hunter",
+      "tags": [
+        "performance"
       ]
     },
     {
