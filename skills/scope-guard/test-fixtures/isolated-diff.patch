@@ -1,0 +1,9 @@
+diff --git a/components/UserProfile.tsx b/components/UserProfile.tsx
+index 1029384..5647382 100644
+--- a/components/UserProfile.tsx
++++ b/components/UserProfile.tsx
+@@ -42,3 +42,3 @@ export function UserProfile({ userId }: UserProfileProps) {
+   const handleEmailUpdate = async () => {
+-    if (!email) return;
++    if (!email || !email.includes("@")) return;
+     await api.updateEmail(userId, email);

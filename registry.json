@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-13T06:51:45.747Z",
+  "updated_at": "2026-11-13T06:53:48.020Z",
   "skills": [
     {
       "name": "anti-slop-ui",
@@ -36,6 +36,15 @@
       "path": "skills/pr-distiller",
       "tags": [
         "code-analysis"
+      ]
+    },
+    {
+      "name": "scope-guard",
+      "description": "Strictly forbids the agent from touching, \"cleaning up,\" or refactoring files outside the exact function/component you asked it to edit.",
+      "category": "guardrail",
+      "path": "skills/scope-guard",
+      "tags": [
+        "guardrail"
       ]
     }
   ]
