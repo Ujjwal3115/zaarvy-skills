@@ -31,6 +31,7 @@
 
 | Skill | Category | Description | Primary Triggers |
 | :--- | :--- | :--- | :--- |
+| [`anti-slop-ui`](skills/anti-slop-ui/SKILL.md) | `ui-design` | Purges generic AI frontend clichés (purple gradients, bento bloat) and enforces 3-tier canvas depth & editorial typography. | Web UI builds, dashboards, design systems, Tailwind refactors |
 | [`context-diet`](skills/context-diet/SKILL.md) | `optimization` | Strips comments, docstrings, and redundant lines while preserving 100% functional logic (saves ~50–65% tokens). | Files > 100 lines, context compression, prompt pruning |
 | [`pr-distiller`](skills/pr-distiller/SKILL.md) | `code-analysis` | Distills multi-file unified git diffs into executive risk ratings, breaking change audits, and changelogs. | Git diff reviews, PR audits, pre-merge checks |
 | [`api-contract-mocker`](skills/api-contract-mocker/SKILL.md) | `mocking` | Synthesizes realistic JSON test fixtures and zero-dependency in-memory Fetch interceptors from OpenAPI/Swagger. | OpenAPI / Swagger specs, frontend mocking, API stubs |

@@ -31,7 +31,19 @@
           },
           "category": {
             "type": "string",
-            "enum": ["optimization", "code-analysis", "mocking", "testing", "security", "scaffolding"]
+            "enum": [
+              "optimization",
+              "code-analysis",
+              "mocking",
+              "testing",
+              "security",
+              "scaffolding",
+              "ui-design",
+              "guardrail",
+              "devops",
+              "performance",
+              "refactoring"
+            ]
           },
           "path": {
             "type": "string",

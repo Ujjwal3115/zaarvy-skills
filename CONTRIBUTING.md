@@ -31,7 +31,7 @@ Each `SKILL.md` must begin with YAML frontmatter bounded by `---`:
 ---
 name: my-skill-name
 description: Clear, action-oriented description under 1024 characters stating exactly what the skill does and precise trigger conditions.
-category: optimization       # Allowed: optimization | code-analysis | mocking | testing | security | scaffolding
+category: optimization       # Allowed: optimization | code-analysis | mocking | testing | security | scaffolding | ui-design | guardrail | devops | performance | refactoring
 tags:
   - optimization
   - tooling

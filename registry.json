@@ -1,7 +1,16 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-11-02T09:39:34.372Z",
+  "updated_at": "2026-11-13T06:51:45.747Z",
   "skills": [
+    {
+      "name": "anti-slop-ui",
+      "description": "Bans generic AI frontend clichés (purple-blue gradients, bloated bento grids, unnecessary drop shadows) and enforces sharp, high-contrast, minimal layouts.",
+      "category": "ui-design",
+      "path": "skills/anti-slop-ui",
+      "tags": [
+        "ui-design"
+      ]
+    },
     {
       "name": "api-contract-mocker",
       "description": "Generates zero-dependency mock handlers and fixtures from API specs. Use when receiving OpenAPI schemas, Swagger JSON, or TypeScript interfaces to mock endpoints.",

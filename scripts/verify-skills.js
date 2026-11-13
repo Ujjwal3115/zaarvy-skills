@@ -31,7 +31,12 @@ const VALID_CATEGORIES = [
   'mocking',
   'testing',
   'security',
-  'scaffolding'
+  'scaffolding',
+  'ui-design',
+  'guardrail',
+  'devops',
+  'performance',
+  'refactoring'
 ];
 
 // Lightweight zero-dependency YAML frontmatter parser
@@ -161,7 +166,7 @@ function validateSkillDir(dirName) {
   }
 
   // 3. Category validation
-  const category = frontmatter.category;
+  const category = frontmatter.category || frontmatter.graphvy_node?.category;
   if (!category || !VALID_CATEGORIES.includes(category)) {
     errors.push(`Category '${category}' is invalid. Allowed: ${VALID_CATEGORIES.join(', ')}`);
   }
